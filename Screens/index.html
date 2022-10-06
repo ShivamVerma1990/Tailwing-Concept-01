@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens:{
+                sm:'482px',
+                md:'768px',
+                lg:'976px',
+                xl:'1440px'
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              blue:'#383CC1',
+              creamist:'#E07C24'
+            }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-700">
+    <div class="bg-blue text-center">ram</div>
+<!-- here we explain a small concept of screens -->
+<!-- Where this approach surprises people most often is that to style something for mobile, 
+    you need to use the unprefixed version of a utility, not the sm: prefixed version. 
+    Don’t think of sm: as meaning “on small screens”, think of it as “at the small breakpoint“. -->
+<!-- This will only center text on screens 640px and wider, not on small screens -->
+<div class="bg-clifford  text-center">Hell0 </div>
+
+<!-- This will center text on mobile and all screen size, and sm:text-left will align text left side for exact 640px and wider screen-->
+<div class="bg-creamist  text-center sm:text-left">shivam </div>
+</body>
+</html>
