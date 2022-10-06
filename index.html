@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens:{
+                sm:'482px',
+                md:'768px',
+                lg:'976px',
+                xl:'1440px'
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              blue:'#383CC1',
+              creamist:'#E07C24'
+            }
+            }
+          }
+        }
+      </script>
+</head>
+<body class='bg-blue'>
+    <nav class="relative container bg-creamist mx-auto p-3">
+        <div class="flex justify-between item-center">
+<div ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSyuT6SVs5Qw37gtKM69Ev5wfh8Yq0BZjHHe5dFlooQ&s" alt="" class="w-8"></div>
+
+<div class="space-x-10 item-center">
+    <a href="#">Home</a>
+    <a href="#">AboutUs</a>
+    <a href="#">Pages</a>
+    <a href="#">Contact</a>
+</div>
+
+<div>
+    text3
+</div>
+
+</div>
+    </nav>
+</body>
+</html>
